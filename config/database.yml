@@ -22,4 +22,6 @@ test:
 
 production:
   <<: *default
-  database: sample_rails_prod
+  database: ENV['CLEARDB_DATABASE_URL']
+  username: ENV['CLEARDB_DATABASE_USERNAME']
+  password: ENV['CLEARDB_DATABASE_PASSWORDs']
